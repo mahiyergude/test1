@@ -1,0 +1,53 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcmp-home-page-deployment
+  namespace: dl
+spec:
+  selector:
+    matchLabels:
+      app: mcmp-home-page-pods
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mcmp-home-page-pods
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - csc2cxn00000817
+      containers:
+      - name: mcmp-home-page-container
+        image: ben4docker/kpadmin:storage-0.4
+        #image: manoj4docker/kpadmin:mcmp-home-page-image-test
+        ports:
+          - containerPort: 443
+        resources:
+          limits:
+            memory: "4Gi"
+            cpu: "500m"
+      imagePullSecrets:
+      - name: docker-login
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mcmp-home-page-svc
+  namespace: dl
+spec:
+  type: ClusterIP
+  ports:
+    - targetPort: 443
+      port: 443
+  selector:
+    app: mcmp-home-page-pods
+  externalIPs:
+    - 10.15.197.52
+---
