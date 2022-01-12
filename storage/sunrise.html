@@ -33,6 +33,7 @@
                 </div>
             </a>
         </div>
+
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="" href="#">
@@ -90,8 +91,7 @@
             <div class="container">
                 <div class="containt_main">
                     <div id="mySidenav" class="sidenav" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-                        <a href="https://ops-analytics.appl.kp.org/s/storage/app/canvas#/workpad/workpad-341c1b1a-8c53-4235-885f-015128471d1e/page/1?__fullscreen=true"
-                            target="_blank" class="main-nav">Sunrise Dashboard</a>
+                        <a href="" class="main-nav-no-link">Sunrise Dashboard</a>
                         <a href="ipc.html" target="_blank" class="main-nav">Storage IPC</a>
                         <a href="backup.html" target="_blank" class="main-nav">Backup IPC</a>
                         <a href="" class="main-nav-no-link">Storage Capacity</a>
@@ -117,74 +117,12 @@
                 </div>
             </div>
         </div>
-        <div class="sunrise">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-9">
-                        <div class="banner-txt pl-3">
-                            <h2>File Storage</h2>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="banner-txt">
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="sunrise-report">
+            <iframe
+                src="https://ops-analytics.appl.kp.org/s/storage/app/canvas#/workpad/workpad-341c1b1a-8c53-4235-885f-015128471d1e/page/1?__fullscreen=true"></iframe>
         </div>
 
-        <div class="top-banner">
 
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="tab-section">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link active" id="nav-homefile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-homefile" type="button" role="tab"
-                                            aria-controls="nav-homefile" aria-selected="true">Home</button>
-                                        <button class="nav-link" id="nav-capacityfile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-capacityfile" type="button" role="tab"
-                                            aria-controls="nav-capacityfile" aria-selected="false">Capacity
-                                            View</button>
-                                        <button class="nav-link" id="nav-utilizationfile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-utilizationfile" type="button" role="tab"
-                                            aria-controls="nav-utilizationfile" aria-selected="false">Utilization
-                                            View</button>
-                                    </div>
-                                </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-homefile" role="tabpanel"
-                                        aria-labelledby="nav-homefile-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/079c4b90-32f2-11eb-a45d-a317886c4d8c?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90d%2Cto%3A'2021-04-30T14%3A43%3A21.784Z'))"></iframe>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-capacityfile" role="tabpanel"
-                                        aria-labelledby="nav-capacityfile-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/8ac701a0-5b19-11eb-9be9-b1025b0b3c46?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cto%3Anow))"></iframe>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-utilizationfile" role="tabpanel"
-                                        aria-labelledby="nav-utilizationfile-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/72d8ff80-5b05-11eb-9be9-b1025b0b3c46?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90d%2Cto%3Anow))"></iframe>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
     </div>

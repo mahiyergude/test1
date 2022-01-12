@@ -2,17 +2,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mcmp-home-page-deployment
+  name: storage-dashboard-deployment
   namespace: dl
 spec:
   selector:
     matchLabels:
-      app: mcmp-home-page-pods
+      app: storage-dashboard-pods
   replicas: 1
   template:
     metadata:
       labels:
-        app: mcmp-home-page-pods
+        app: storage-dashboard-pods
     spec:
       affinity:
         nodeAffinity:
@@ -24,11 +24,10 @@ spec:
                 values:
                 - csc2cxn00000817
       containers:
-      - name: mcmp-home-page-container
-        image: ben4docker/kpadmin:storage-0.4
-        #image: manoj4docker/kpadmin:mcmp-home-page-image-test
+      - name: storage-dashboard-container
+        image: ben4docker/kpadmin:storage-dashboard
         ports:
-          - containerPort: 443
+          - containerPort: 8443
         resources:
           limits:
             memory: "4Gi"
@@ -39,15 +38,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mcmp-home-page-svc
+  name: storage-dashboard-svc
   namespace: dl
 spec:
   type: ClusterIP
   ports:
-    - targetPort: 443
-      port: 443
+    - targetPort: 8443
+      port: 8443
   selector:
-    app: mcmp-home-page-pods
+    app: storage-dashboard-pods
   externalIPs:
     - 10.15.197.52
 ---

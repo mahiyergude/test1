@@ -23,13 +23,10 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="logo">
-            <button class="navbar-toggler" type="button" data-toggle="collapse">
-                <span class="toggle_icon" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()"><img
-                        src="assets/toggle-icon.png"></span>
-            </button>
+          
             <a class="navbar-brand" href="#">
                 <!--<img src="./assets/logo.svg">-->
-                <div class="caption" onclick="location.href='index.html';">IBM Services for Multicloud Management
+                <div class="caption">IBM Services for Multicloud Management
                 </div>
             </a>
         </div>
@@ -86,101 +83,26 @@
     <!-- banner bg main start -->
     <div class="banner_bg_main">
 
-        <!-- header section start -->
-        <div class="header_section">
-            <div class="container">
-                <div class="containt_main">
-                    <div id="mySidenav" class="sidenav" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-                        <a href="https://ops-analytics.appl.kp.org/s/storage/app/canvas#/workpad/workpad-341c1b1a-8c53-4235-885f-015128471d1e/page/1?__fullscreen=true"
-                            target="_blank" class="main-nav">Sunrise Dashboard</a>
-                        <a href="index.html" target="_blank" class="main-nav">Storage IPC</a>
-                        <a href="backup.html" target="_blank" class="main-nav">Backup IPC</a>
-                        <a href="" class="main-nav">Storage Capacity</a>
-                            <a href="file-storage.html" target="_blank" class="sub-nav">File Storage</a>
-                            <a href="block-storage.html" target="_blank" class="sub-nav">Block Storage</a>
-                        <a href="b-capacity.html" target="_blank" class="main-nav">Backup Capacity</a>                        
-                        <a href="" class="main-nav">Anomaly</a>
-                            <a href="nasfile-anomaly.html" target="_blank" class="sub-nav">NAS File</a>
-                            <a href="naspool-anomaly.html" target="_blank" class="sub-nav">NAS Pool</a>
-                            <a href="sanblock-anomaly.html" target="_blank" class="sub-nav">SAN Block</a>
-                            <a href="datadomain-anomaly.html" target="_blank" class="sub-nav">Data Domain</a>
-                        <a href="forecast.html" target="_blank" class="main-nav">Forecast</a>
-                        <a href="performance.html" target="_blank" class="main-nav">Storage Performance</a>
-                        <a href="data.html" target="_blank" class="main-nav">Data Quality</a>
-                        <a href="instructions.html" target="_blank" class="main-nav">Instructions</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sunrise">
+         <div id="main" class="pt-3 pb-5">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-9">
-                        <div class="banner-txt pl-3">
-                            <h2>Storage IPC</h2>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="banner-txt">
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="top-banner">
-
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="tab-section">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link active" id="nav-incident-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-incident" type="button" role="tab"
-                                            aria-controls="nav-incident" aria-selected="true">Incident</button>
-                                        <button class="nav-link" id="nav-problem-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-problem" type="button" role="tab"
-                                            aria-controls="nav-problem" aria-selected="false">Problem</button>
-                                        <button class="nav-link" id="nav-change-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-change" type="button" role="tab"
-                                            aria-controls="nav-change" aria-selected="false">Change</button>
-                                    </div>
-                                </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-incident" role="tabpanel"
-                                        aria-labelledby="nav-incident-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/29812e10-b1b9-11eb-9303-3f33928358b0?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-30d%2Cto%3Anow))"></iframe>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-change" role="tabpanel"
-                                        aria-labelledby="nav-change-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/f675a1b0-32d1-11eb-a655-0796996b9f64?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-30d%2Cto%3Anow))"></iframe>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-problem" role="tabpanel"
-                                        aria-labelledby="nav-problem-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/31606ee0-32cd-11eb-a655-0796996b9f64?_g=()"></iframe>
-
-                                    </div>
-
-                                </div>
+                    <div class="col-md-12">
+                        <div class="card login">
+                            <div class="card-header">
+                                <ul>
+                                    <li>Login to View Storage Dashboard</li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <iframe name="myiframe" class="log"
+                                    src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/41410e60-cc73-11eb-baab-1598c99d2e1f?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-24h%2Cto%3Anow))embed=true&_g=(refreshInterval:(pause:!t,value:0),time:(from:now-4y,to:now))&_a=(fullScreenMode:!t)">
+                                </iframe>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
     <!-- banner bg main end -->
 
@@ -198,6 +120,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
         crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            let selectedTab = window.location.hash;
+            $('.nav-link[data-bs-target="' + selectedTab + '"]').trigger('click');
+        })
+    </script>
+
+
 
 </body>
 

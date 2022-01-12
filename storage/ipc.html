@@ -33,6 +33,7 @@
                 </div>
             </a>
         </div>
+
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="" href="#">
@@ -94,11 +95,11 @@
                             target="_blank" class="main-nav">Sunrise Dashboard</a>
                         <a href="ipc.html" target="_blank" class="main-nav">Storage IPC</a>
                         <a href="backup.html" target="_blank" class="main-nav">Backup IPC</a>
-                        <a href="" class="main-nav-no-link">Storage Capacity</a>
+                        <a href="" class="main-nav">Storage Capacity</a>
                         <a href="file-storage.html" target="_blank" class="sub-nav">File Storage</a>
                         <a href="block-storage.html" target="_blank" class="sub-nav">Block Storage</a>
                         <a href="b-capacity.html" target="_blank" class="main-nav">Backup Capacity</a>
-                        <a href="" class="main-nav-no-link">Capacity Anomaly</a>
+                        <a href="" class="main-nav">Capacity Anomaly</a>
                         <a href="nasfile-anomaly.html" target="_blank" class="sub-nav">NAS File</a>
                         <a href="naspool-anomaly.html" target="_blank" class="sub-nav">NAS Pool</a>
                         <a href="sanblock-anomaly.html" target="_blank" class="sub-nav">SAN Block</a>
@@ -122,7 +123,7 @@
                 <div class="row">
                     <div class="col-9">
                         <div class="banner-txt pl-3">
-                            <h2>File Storage</h2>
+                            <h2>Storage IPC</h2>
                         </div>
                     </div>
                     <div class="col-3">
@@ -146,35 +147,35 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link active" id="nav-homefile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-homefile" type="button" role="tab"
-                                            aria-controls="nav-homefile" aria-selected="true">Home</button>
-                                        <button class="nav-link" id="nav-capacityfile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-capacityfile" type="button" role="tab"
-                                            aria-controls="nav-capacityfile" aria-selected="false">Capacity
-                                            View</button>
-                                        <button class="nav-link" id="nav-utilizationfile-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-utilizationfile" type="button" role="tab"
-                                            aria-controls="nav-utilizationfile" aria-selected="false">Utilization
-                                            View</button>
+                                    <div class="nav nav-tabs">
+                                        <button class="nav-link active" id="nav-incident-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-incident" type="button" role="tab"
+                                            aria-controls="nav-incident" aria-selected="true">Incident</button>
+                                        <button class="nav-link" id="nav-problem-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-problem" type="button" role="tab"
+                                            aria-controls="nav-problem" aria-selected="false">Problem</button>
+                                        <button class="nav-link" id="nav-change-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-change" type="button" role="tab"
+                                            aria-controls="nav-change" aria-selected="false">Change</button>
                                     </div>
                                 </nav>
+
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-homefile" role="tabpanel"
-                                        aria-labelledby="nav-homefile-tab">
+                                    <div class="tab-pane fade show active" id="nav-incident" role="tabpanel"
+                                        aria-labelledby="nav-incident-tab">
                                         <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/079c4b90-32f2-11eb-a45d-a317886c4d8c?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90d%2Cto%3A'2021-04-30T14%3A43%3A21.784Z'))"></iframe>
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/29812e10-b1b9-11eb-9303-3f33928358b0?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-30d%2Cto%3Anow))"></iframe>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-capacityfile" role="tabpanel"
-                                        aria-labelledby="nav-capacityfile-tab">
+                                    <div class="tab-pane fade" id="nav-change" role="tabpanel"
+                                        aria-labelledby="nav-change-tab">
                                         <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/8ac701a0-5b19-11eb-9be9-b1025b0b3c46?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cto%3Anow))"></iframe>
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/f675a1b0-32d1-11eb-a655-0796996b9f64?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-30d%2Cto%3Anow))"></iframe>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-utilizationfile" role="tabpanel"
-                                        aria-labelledby="nav-utilizationfile-tab">
+                                    <div class="tab-pane fade" id="nav-problem" role="tabpanel"
+                                        aria-labelledby="nav-problem-tab">
                                         <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/72d8ff80-5b05-11eb-9be9-b1025b0b3c46?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90d%2Cto%3Anow))"></iframe>
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/31606ee0-32cd-11eb-a655-0796996b9f64?_g=()"></iframe>
+
                                     </div>
 
                                 </div>

@@ -92,19 +92,25 @@
                     <div id="mySidenav" class="sidenav" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
                         <a href="https://ops-analytics.appl.kp.org/s/storage/app/canvas#/workpad/workpad-341c1b1a-8c53-4235-885f-015128471d1e/page/1?__fullscreen=true"
                             target="_blank" class="main-nav">Sunrise Dashboard</a>
-                        <a href="index.html" target="_blank" class="main-nav">Storage IPC</a>
+                        <a href="ipc.html" target="_blank" class="main-nav">Storage IPC</a>
                         <a href="backup.html" target="_blank" class="main-nav">Backup IPC</a>
-                        <a href="" class="main-nav">Storage Capacity</a>
-                            <a href="file-storage.html" target="_blank" class="sub-nav">File Storage</a>
-                            <a href="block-storage.html" target="_blank" class="sub-nav">Block Storage</a>
-                        <a href="b-capacity.html" target="_blank" class="main-nav">Backup Capacity</a>                        
-                        <a href="" class="main-nav">Anomaly</a>
-                            <a href="nasfile-anomaly.html" target="_blank" class="sub-nav">NAS File</a>
-                            <a href="naspool-anomaly.html" target="_blank" class="sub-nav">NAS Pool</a>
-                            <a href="sanblock-anomaly.html" target="_blank" class="sub-nav">SAN Block</a>
-                            <a href="datadomain-anomaly.html" target="_blank" class="sub-nav">Data Domain</a>
-                        <a href="forecast.html" target="_blank" class="main-nav">Forecast</a>
+                        <a href="" class="main-nav-no-link">Storage Capacity</a>
+                        <a href="file-storage.html" target="_blank" class="sub-nav">File Storage</a>
+                        <a href="block-storage.html" target="_blank" class="sub-nav">Block Storage</a>
+                        <a href="b-capacity.html" target="_blank" class="main-nav">Backup Capacity</a>
+                        <a href="" class="main-nav-no-link">Capacity Anomaly</a>
+                        <a href="nasfile-anomaly.html" target="_blank" class="sub-nav">NAS File</a>
+                        <a href="naspool-anomaly.html" target="_blank" class="sub-nav">NAS Pool</a>
+                        <a href="sanblock-anomaly.html" target="_blank" class="sub-nav">SAN Block</a>
+                        <a href="datadomain-anomaly.html" target="_blank" class="sub-nav">Data Domain</a>
+                        <a href="forecast.html" target="_blank" class="main-nav">Capacity Forecast</a>
                         <a href="performance.html" target="_blank" class="main-nav">Storage Performance</a>
+                        <a href="" target="_blank" class="main-nav">Performance Descriptive</a>
+                        <a href="perf-dd.html" target="_blank" class="sub-nav">Data Domain</a>
+                        <a href="perf-block.html" target="_blank" class="sub-nav">Block</a>
+                        <a href="perf-nas-isilon.html" target="_blank" class="sub-nav">NAS Isilon</a>
+                        <a href="perf-nas-vnx.html" target="_blank" class="sub-nav">NAS VNX</a>
+                        <a href="perf-anomaly.html" target="_blank" class="main-nav">Performance Anomaly</a>
                         <a href="data.html" target="_blank" class="main-nav">Data Quality</a>
                         <a href="instructions.html" target="_blank" class="main-nav">Instructions</a>
                     </div>
@@ -158,19 +164,23 @@
                                 <div class="tab-content" id="nav-tabContent">
                                     <div class="tab-pane fade show active" id="nav-data1-an" role="tabpanel"
                                         aria-labelledby="nav-data1-an-tab">
-                                        <iframe src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/debb0cb0-ac00-11eb-9891-d70340c5d9f3?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cto%3Anow))"></iframe>
+                                        <iframe
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/debb0cb0-ac00-11eb-9891-d70340c5d9f3?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cto%3Anow))"></iframe>
                                     </div>
                                     <div class="tab-pane fade" id="nav-data6-an" role="tabpanel"
                                         aria-labelledby="nav-data6-an-tab">
-                                        <iframe src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/55526310-ac3c-11eb-9891-d70340c5d9f3?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cto%3Anow))"></iframe>
+                                        <iframe
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/55526310-ac3c-11eb-9891-d70340c5d9f3?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cto%3Anow))"></iframe>
                                     </div>
                                     <div class="tab-pane fade" id="nav-data30-an" role="tabpanel"
                                         aria-labelledby="nav-data30-an-tab">
-                                        <iframe src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/24b038c0-ac4d-11eb-9891-d70340c5d9f3?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-30d%2Cto%3Anow))"></iframe>
+                                        <iframe
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/24b038c0-ac4d-11eb-9891-d70340c5d9f3?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-30d%2Cto%3Anow))"></iframe>
                                     </div>
                                     <div class="tab-pane fade" id="nav-data48-an" role="tabpanel"
                                         aria-labelledby="nav-data48-an-tab">
-                                        <iframe src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/44cd34a0-af22-11eb-9303-3f33928358b0?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-72h%2Cto%3Anow))"></iframe>
+                                        <iframe
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/44cd34a0-af22-11eb-9303-3f33928358b0?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-72h%2Cto%3Anow))"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -199,6 +209,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
         crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            let selectedTab = window.location.hash;
+            $('.nav-link[data-bs-target="' + selectedTab + '"]').trigger('click');
+        })
+    </script>
 
 </body>
 
