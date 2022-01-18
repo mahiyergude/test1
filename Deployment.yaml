@@ -27,7 +27,7 @@ spec:
       - name: storage-dashboard-container
         image: ben4docker/kpadmin:storage-dashboard
         ports:
-          - containerPort: 8443
+          - containerPort: 443
         resources:
           limits:
             memory: "4Gi"
@@ -43,8 +43,8 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - targetPort: 8443
-      port: 8443
+    - targetPort: 443
+      port: 443
   selector:
     app: storage-dashboard-pods
   externalIPs:
