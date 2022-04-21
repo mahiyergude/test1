@@ -25,7 +25,7 @@ spec:
                 - csc2cxn00000817
       containers:
       - name: storage-dashboard-container
-        image: ben4docker/kpadmin:storage-dashboard
+        image: na.artifactory.taas.kyndryl.net/kyn-kpk8elkdl-team-docker-local/storage-dashboard:latest
         ports:
           - containerPort: 443
         resources:
@@ -33,7 +33,7 @@ spec:
             memory: "4Gi"
             cpu: "500m"
       imagePullSecrets:
-      - name: docker-login
+      - name: regcred
 ---
 apiVersion: v1
 kind: Service
