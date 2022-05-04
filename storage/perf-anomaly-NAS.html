@@ -125,7 +125,7 @@
                 <div class="row">
                     <div class="col-9">
                         <div class="banner-txt pl-3">
-                            <h2>NAS Pool Storage Anomaly</h2>
+                            <h2>NAS Performance Anomaly</h2>
                         </div>
                     </div>
                     <div class="col-3">
@@ -150,41 +150,26 @@
                             <div class="col-md-12">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <button class="nav-link active" id="nav-pool1-an-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-pool1-an" type="button" role="tab"
-                                            aria-controls="nav-pool1-an" aria-selected="true">Last 1 year</button>
-                                        <button class="nav-link" id="nav-pool6-an-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-pool6-an" type="button" role="tab"
-                                            aria-controls="nav-pool6-an" aria-selected="false">Last 6 Months</button>
-                                        <button class="nav-link" id="nav-pool30-an-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-pool30-an" type="button" role="tab"
-                                            aria-controls="nav-pool30-an" aria-selected="false">Last 30 Days</button>
-                                        <button class="nav-link" id="nav-pool48-an-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-pool48-an" type="button" role="tab"
-                                            aria-controls="nav-pool48-an" aria-selected="false">Last 48 Hours</button>
+                                        <button class="nav-link active" id="nav-perf-isilon-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-perf-isilon" type="button" role="tab"
+                                            aria-controls="nav-perf-isilon" aria-selected="true">NAS Isilon</button>
+                                        <button class="nav-link" id="nav-perf-vnx-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-perf-vnx" type="button" role="tab"
+                                            aria-controls="nav-perf-vnx" aria-selected="false">NAS VNX</button>
                                     </div>
                                 </nav>
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-pool1-an" role="tabpanel"
-                                        aria-labelledby="nav-pool1-an-tab">
+                                    <div class="tab-pane fade show active" id="nav-perf-isilon" role="tabpanel"
+                                        aria-labelledby="nav-perf-isilon-tab">
                                         <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/e31b1aa0-8e34-11eb-ad6e-310e6496e11f?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cto%3Anow))"></iframe>
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/dashboards#/view/e036a020-fb94-11eb-b7ba-65cddb2b03d5"></iframe>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-pool6-an" role="tabpanel"
-                                        aria-labelledby="nav-pool6-an-tab">
+                                    <div class="tab-pane fade" id="nav-perf-vnx" role="tabpanel"
+                                        aria-labelledby="nav-perf-vnx-tab">
                                         <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/afe7c120-8e24-11eb-ad6e-310e6496e11f?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cto%3Anow))"></iframe>
+                                            src="https://ops-analytics.appl.kp.org/s/storage/app/dashboards#/view/769f4e20-20f9-11ec-bf13-f98b621ba56f"></iframe>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-pool30-an" role="tabpanel"
-                                        aria-labelledby="nav-pool30-an-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/09928420-8e35-11eb-ad6e-310e6496e11f?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3A'2020-11-18T02%3A28%3A47.744Z'%2Cto%3A'2020-12-18T15%3A15%3A42.974Z'))"></iframe>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav-pool48-an" role="tabpanel"
-                                        aria-labelledby="nav-pool48-an-tab">
-                                        <iframe
-                                            src="https://ops-analytics.appl.kp.org/s/storage/app/kibana#/dashboard/2b0f83a0-8e35-11eb-ad6e-310e6496e11f?_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3A'2020-06-18T02%3A28%3A47.744Z'%2Cto%3A'2020-06-20T15%3A15%3A42.974Z'))"></iframe>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
